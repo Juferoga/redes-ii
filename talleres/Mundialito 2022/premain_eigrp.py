@@ -54,11 +54,11 @@ for key in routers:
     print("router eigrp 1")
     for red in redes:
         if routers[key].__contains__(red):
-            print(f"network {red[1]} {red[2]} area 0")
+            print(f"network {red[1]} {red[2]}")
             if key=="japon" or key=="senegal" or key=="francia" or key=="portugal":
-                print(f"network {red[1]} {red[2]} area 0")
+                print(f"network {red[1]} {red[2]}")
             if key=="canada" or key=="iran":
-                print(f"network {red[1]} {red[2]} area 0")
-        print("no auto-summary")
+                print(f"network {red[1]} {red[2]}")
+    print("no auto-summary")
     print("exit\nexit\ncopy running-config startup-config\n\n")
     print("\n")
